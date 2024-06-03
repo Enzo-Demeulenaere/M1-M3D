@@ -1,0 +1,27 @@
+<node name="root">
+
+<node name="cyl">
+<position x="-2.5" y="0" z="0"/>
+<node>
+<orientation angle="90" x="0" y="1" z="0"/>
+<scale x="1.0" y="1.0" z="5.0"/>
+<mesh type="cylinder"/>
+</node>
+</node>
+
+<node name="n1">
+<position x="0" y="0" z="5"/>
+<mesh type="torus"/>
+
+  <node name="n11">
+  <position x="-2" y="0" z="0"/>
+  <mesh type="cube" />
+  </node>
+
+  <node name="n12">
+  <position x="2" y="0" z="0"/>
+  <mesh type="cube"/>
+  </node>
+</node>
+
+</node>

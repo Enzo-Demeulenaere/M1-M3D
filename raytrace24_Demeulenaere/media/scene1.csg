@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<scene>
+
+<light x="2" y="0" z="0" intensity="1" />
+<light x="-2" y="0" z="0" intensity="1" />
+
+<primitive type="cube">
+  <translate x="0.7" y="0.0" z="-1.2" />
+  <rotate angle="45" x="1" y="1" z="0"/>
+  <diffuse red="0.0" green="0.2" blue="0.8" />
+  <specular red="0.2" green="0.7" blue="0.1" shininess="100"/>
+  <ambient red="0.2" green="0.1" blue="0.1" />
+</primitive>
+
+</scene>

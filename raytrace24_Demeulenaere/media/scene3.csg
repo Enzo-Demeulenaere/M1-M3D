@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<scene>
+
+<light x="800" y="0" z="0" intensity="0.5" />
+<light x="-800" y="0" z="0" intensity="0.5" />
+<light x="0" y="800" z="0" intensity="0.5" />
+<light x="0" y="-800" z="0" intensity="0.5" />
+<light x="0" y="0" z="800" intensity="0.5" />
+<light x="0" y="0" z="-800" intensity="0.5" />
+
+<node operation="difference">
+  <primitive type="sphere">
+    <translate x="0" y="2" z="0" />
+    <scale x="2" y="2" z="2"/>
+    <diffuse red="0" green="0.4" blue="0.3" />
+    <specular red="0.0" green="0.8" blue="0.0" shininess="50" />
+  </primitive>
+  <node operation="union">
+    <primitive type="cube">
+      <translate x="-2" y="0" z="0" />
+      <scale x="2" y="2" z="2"/>
+      <diffuse red="0.5" green="0.2" blue="0" />
+      <specular red="0.0" green="0.8" blue="0.0" shininess="50" />
+    </primitive>
+    <primitive type="sphere">
+      <translate x="0.5" y="0" z="0" />
+      <scale x="2" y="2" z="2"/>
+      <diffuse red="0.0" green="0.1" blue="0.6" />
+      <scale x="1.2" y="1.2" z="1.2" />
+      <specular red="0.0" green="0.8" blue="0.0" shininess="50" />
+    </primitive>
+  </node>
+</node>
+
+</scene>

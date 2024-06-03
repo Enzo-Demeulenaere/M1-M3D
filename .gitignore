@@ -1,0 +1,17 @@
+# Ignore les produits de la compilation
+bin/
+build*
+
+# Ignore les fichiers générés par l'éditeur (Qt Creator) propres à chaque machine/environnement
+*.pro.user
+
+# Ignore les fichiers temporaires
+*~
+
+# Ignore les fichiers de sauvegarde
+*.bak
+
+# Ignore les fichiers de configuration spécifiques à l'environnement
+.pro.user
+.pro.user.*
+.pro.shared
